@@ -1,0 +1,284 @@
+@keyframes shadowLeft {
+    0%{
+        left: -120vw;
+    }
+    100%{
+        opacity: 1;
+        left: -100vw;
+    }
+}
+
+@keyframes shadowRight {
+    0%{
+        right: -120vw;
+    }
+    100%{
+        opacity: 1;
+        right: -100vw;
+    }
+}
+
+@keyframes imageMain {
+    0%{
+        opacity: 0;
+        transform: scale(3.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animTitre {
+    0%{
+        opacity: 1;
+        left: -36vw;
+    }
+    100%{
+        opacity: 1;
+        left: 4.3vw;
+    }
+}
+
+@keyframes animSousTitre {
+    0%{
+        left: -36vw;
+    }
+    100%{
+        opacity: 1;
+        left: 4.3vw;
+    }
+}
+
+@keyframes animCadre {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        bottom: 18vh;
+    }
+}
+
+@keyframes animTextChapter{
+
+    0%{
+        bottom: 1vh;
+    }
+    100%{
+        opacity: 1;
+        bottom: 1.5vh;
+    }
+}
+
+@keyframes animChapter{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0);
+        background-color: #BC8861;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        background-color: #432022;
+    }
+}
+
+@keyframes animChapter2{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0);
+        background-color: #BC8861;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        background-color: #432022;
+    }
+}
+
+@keyframes animChapter3{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0);
+        background-color: #BC8861;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        background-color: #432022;
+    }
+}
+
+@keyframes animTrait{
+    0%{
+        left: 50%;
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes animChapterAll{
+    0%{
+        top: 0.2vh;
+    }
+    100%{
+        top: -2vh;
+    }
+}
+
+@keyframes animDescription {
+    0%{
+        opacity: 0.5;
+        right: -36vw;
+    }
+    100%{
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@keyframes animImageBas {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes animCaroussel {
+    0% { 
+    left: 0;
+    }
+    20% { 
+    left: 0;
+    }
+    25% {
+    left: -16.5vw; 
+    }
+    45% { 
+    left: -16.5vw; 
+    }
+    50% {
+    left: -33vw; 
+    }
+    70% {
+    left: -33vw; 
+    }
+    75% {
+    left: -49.5vw; 
+    }
+    90% {
+    left: -49.5vw; 
+    }
+    100%{
+    left: 0;
+    }
+}
+
+@keyframes animPopCaroussel {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animMission1{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animMission2{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animMission3{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animMission4{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animMission5{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animMission6{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

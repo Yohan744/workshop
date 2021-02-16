@@ -1,0 +1,231 @@
+.sliderContainer{
+    position: relative;
+    top: 14vh;
+    left: 6.5vw;
+    height: 15vh;
+    width: 49.5vw;
+    overflow-x: hidden;
+    z-index: 3;
+    opacity: 0;
+}
+
+.sliderContainer:hover{
+    height: 100vh;
+}
+
+#img2:target > .sliderContainer, #img3:target > .sliderContainer, #img4:target > .sliderContainer{
+    animation-name: animPopCaroussel;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration: 0.1s;
+    animation-delay: 2s;
+    position: absolute;
+    opacity: 0;
+}
+
+.slider{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+}
+
+#img2:target .caroussel, #img3:target .caroussel, #img4:target .caroussel{
+    position: relative;
+    top: 1vh;
+    left: 0.8vw;
+    height: 10vh;
+    width: 15vw;
+    margin: 1.5vh;
+    background-color: white;
+    z-index: 3;
+    animation: animCaroussel;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+#img2:target > .caroussel:hover{
+    animation-play-state: paused;
+}
+
+.textMission{
+    justify-content: center;
+    text-align: center;
+    color: #432022;
+}
+
+#img2:target .mission1, #img3:target .mission1, #img4:target .mission1{
+    animation-name: animMission1;
+    animation-direction: normal;
+    animation-duration: 0.75s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    z-index: 3;
+    opacity: 0;
+}
+
+.mission1:hover ~ .affichageMission1{
+    position: inherit;
+    top: 20vh;
+    height: 49vh;
+    width: 59vw;
+    background-color: white;
+    z-index: 3;
+    display: block;
+}
+
+.affichageMission1{
+    display: none;
+}
+
+.affichageTextMission{
+    position: inherit;
+    top: 2vh;
+    left: 1.5vw;
+    height: 6vh;
+    width: 43.5vw;
+    font-size: 5vh;
+    z-index: 3;
+    border-bottom: 1.5vh solid #BC8861;
+}
+
+.affichageImgMission{
+    position: inherit;
+    top: 11.5vh;
+    left: 1.5vw;
+    height: 34.5vh;
+    width: 43.5vw;
+    z-index: 3;
+    background-color: black;
+}
+
+#img2:target .mission2, #img3:target .mission2, #img4:target .mission2{
+    animation-name: animMission2;
+    animation-direction: normal;
+    animation-duration: 0.75s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    z-index: 3;
+    opacity: 0;
+}
+
+.mission2:hover ~ .affichageMission2{
+    position: inherit;
+    top: 20vh;
+    height: 49vh;
+    width: 59vw;
+    background-color: white;
+    z-index: 3;
+    display: block;
+}
+
+.affichageMission2{
+    display: none;
+}
+
+#img2:target .mission3, #img3:target .mission3, #img4:target .mission3{
+    animation-name: animMission3;
+    animation-direction: normal;
+    animation-duration: 0.75s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    z-index: 3;
+    opacity: 0;
+}
+
+.mission3:hover ~ .affichageMission3{
+    position: inherit;
+    top: 20vh;
+    height: 49vh;
+    width: 59vw;
+    background-color: white;
+    z-index: 3;
+    display: block;
+}
+
+.affichageMission3{
+    display: none;
+}
+
+#img2:target .mission4, #img3:target .mission4, #img4:target .mission4{
+    animation-name: animMission4;
+    animation-direction: normal;
+    animation-duration: 0.75s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+    z-index: 3;
+    opacity: 0;
+}
+
+.mission4:hover ~ .affichageMission4{
+    position: inherit;
+    top: 20vh;
+    height: 49vh;
+    width: 59vw;
+    background-color: white;
+    z-index: 3;
+    display: block;
+}
+
+.affichageMission4{
+    display: none;
+}
+
+#img2:target .mission5, #img3:target .mission5, #img4:target .mission5{
+    animation-name: animMission5;
+    animation-direction: normal;
+    animation-duration: 0.75s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+    z-index: 3;
+    opacity: 0;
+}
+
+.mission5:hover ~ .affichageMission5{
+    position: inherit;
+    top: 20vh;
+    height: 49vh;
+    width: 59vw;
+    background-color: white;
+    z-index: 3;
+    display: block;
+}
+
+.affichageMission5{
+    display: none;
+}
+
+#img2:target .mission6, #img3:target .mission6, #img4:target .mission6{
+    animation-name: animMission6;
+    animation-direction: normal;
+    animation-duration: 0.75s;
+    animation-delay: 9.5s;
+    animation-fill-mode: forwards;
+    z-index: 3;
+    opacity: 0;
+}
+
+.mission6:hover ~ .affichageMission6{
+    position: inherit;
+    top: 20vh;
+    height: 49vh;
+    width: 59vw;
+    background-color: white;
+    z-index: 3;
+    display: block;
+}
+
+.affichageMission6{
+    display: none;
+}
+
+.imgCaroussel{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

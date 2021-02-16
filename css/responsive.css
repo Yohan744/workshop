@@ -1,0 +1,153 @@
+@media only screen and (max-width: 500px) {
+
+    @keyframes shadowLeft {
+        0%{
+            left: 0;
+        }
+        100%{
+            opacity: 1;
+            left: 0;
+        }
+    }
+
+    @keyframes shadowRight {
+        0%{
+            right: 0;
+        }
+        100%{
+            opacity: 1;
+            right: 0;
+        }
+    }
+
+    @keyframes animTitre {
+        0%{
+            left: -36vw;
+        }
+        100%{
+            opacity: 1;
+            left: 5vw;
+        }
+    }
+
+    @keyframes animSousTitre {
+        0%{
+            left: -36vw;
+        }
+        100%{
+            opacity: 1;
+            left: 5vw;
+        }
+    }
+
+    h1{
+        font-size: 6vh;
+        position: relative;
+        top: -18vh;
+    }
+
+    h2{
+        position: relative;
+        font-size: 4vh;
+        top: -13vh;
+    }
+
+    #cadre{
+        position: absolute;
+        width: 90vw;
+    }
+
+    @keyframes animCadre {
+        0%{
+            bottom: 0;
+            opacity: 0;
+            width: 90vw;
+            left: 5vw;
+        }
+        100%{
+            opacity: 1;
+            bottom: 18vh;
+            width: 90vw;
+            left: 5vw;
+        }
+    }
+
+    #textCadre{
+        font-size: 1.9vh;
+        padding: 2.5vh;
+    }
+
+    .caroussel, .sliderContainer, .slider, .chapterDescriptionText{
+        display: none;
+    }
+
+    @keyframes animChapterAll{
+        0%{
+            top: 0;
+        }
+        100%{
+            top: 0;
+        }
+    }
+
+    .description{
+        position: relative;
+        width: 90vw;
+        right: 5vw;
+        border-radius: 3vw;
+        animation-duration: 2s;
+    }
+
+    @keyframes animDescription {
+        0%{
+            opacity: 0;
+            right: -36vw;
+            width: 90vw;
+            height: 60vh;
+            top: 15vh;
+        }
+        100%{
+            opacity: 1;
+            width: 90vw;
+            right: 5vw;
+            height: 60vh;
+            top: 15vh;
+        }
+    }
+
+    .titreDescription{
+        position: absolute;
+        width: 87vw;
+        height: 8vh;
+    }
+
+    .textDescription{
+        width: 84vw;
+        top: 10vh;
+        left: 3vw;
+        font-size: 2vh;
+    }
+
+    .pDescription{
+        font-size: 1.75vh;
+        text-align: justify;
+    }
+
+    h4{
+        font-size: 3vh;
+    }
+
+    .imageDescription {
+        position: relative;
+        left: 3vw;
+        width: 84vw;
+        height: 25vh;
+        top: 8.5vh;
+    }
+
+    #imgDescription{
+        border-bottom-left-radius: 3vw;
+        border-bottom-right-radius: 3vw;
+
+    }
+}

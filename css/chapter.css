@@ -1,0 +1,134 @@
+h3{
+    position: relative;
+    justify-content: center;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: lighter;
+    top: 3vh;
+    font-size: 3vh;
+    z-index: 3;
+}
+
+#chapterContainer{
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 7vh;
+    z-index: 3;
+}
+
+.chapter{
+    position: relative;
+    height: 9vh;
+    width: 32vw;
+    background-color: #432022;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+}
+
+.chapterDescriptionText{
+    position: relative;
+    opacity: 0;
+    bottom: 3vh;
+    z-index: 3;
+}
+
+.chapter:hover .chapterDescriptionText{
+    color: black;
+    position: relative;
+    font-family: 'Montserrat Alternates', sans-serif;
+    opacity: 0;
+    animation-name: animTextChapter;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    z-index: 3;
+}
+
+.survolChapter{
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    transition: width 0.15s ease-in-out;
+    z-index: 3;
+}
+
+.chapter:hover .survolChapter{
+    width: 100%;
+    transition-duration: 0.15s;
+    transition-timing-function: initial;
+    z-index: 3;
+}
+
+.chapter:hover h3{
+    color: black;
+}
+
+#chapter1{
+    animation-name: animChapter;
+    animation-direction: normal;
+    animation-duration: 0.75s;
+    animation-delay: 3.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+
+#chapter2{
+    animation-name: animChapter2;
+    animation-direction: normal;
+    animation-duration: 0.75s;
+    animation-delay: 3.8s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+
+#chapter3{
+    animation-name: animChapter3;
+    animation-direction: normal;
+    animation-duration: 0.75s;
+    animation-delay: 4.1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+
+.chapter:hover .trait{
+    position: relative;
+    justify-content: center;
+    top: 3vh;
+    width: 0;
+    left: 10%;
+    height: 0.5vh;
+    background-color: #BC8861;
+    animation-name: animTrait;
+    animation-duration: 0.75s;
+    animation-delay: 0.15s;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+
+.chapter:hover .chapterAll{
+    position: relative;
+    animation-name: animChapterAll;
+    animation-direction: normal;
+    animation-duration: 0.75s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@media only screen and (max-device-width: 450px) {
+
+    h3{
+        font-size: 2.5vh;
+    }
+}

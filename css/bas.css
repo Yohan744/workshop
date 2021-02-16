@@ -1,0 +1,102 @@
+h4{
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    color: #432022;
+    font-family: 'Goldman', cursive;
+    z-index: 3;
+}
+
+.image{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 91vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+#img2:target > .description, #img3:target > .description, #img4:target > .description{
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    height: 68vh;
+    width: 36vw;
+    border-bottom-left-radius: 3vw; 
+    box-shadow: -1px -17px 20px -4px rgba(0,0,0,0.9);
+    background-color: white;
+    overflow: hidden;
+    animation-name: animDescription;
+    animation-duration: 0.3s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1.3s;
+    opacity: 0;
+    object-fit: cover;
+}
+
+.titreDescription{
+    position: relative;
+    top: 3vh;
+    left: 2vw;
+    height: 4vh;
+    width: 32vw;
+    font-size: 3vh;
+    border-bottom: 1.5vh solid #BC8861;
+}
+
+.textDescription{
+    position: relative;
+    top: 3vh;
+    left: 2vw;
+    height: 25vh;
+    width: 32vw;
+}
+
+.pDescription{
+    position: relative;
+    text-align: left;
+    padding: 0;
+    top: 4.5vh;
+}
+
+.imageDescription{
+    position: relative;
+    top: 3vh;
+    left: 2vw;
+    height: 31vh;
+    width: 32vw;
+}
+
+#imgDescription{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 3vw;
+}
+
+#img2, #img3, #img4{
+    position: absolute;
+    top: 110vh;
+    left: 0vw;
+    height: 0vh;
+    width: 0vw;
+    overflow: hidden;
+}
+
+#img2:target, #img3:target, #img4:target{
+    display: flex;
+    top: 110vh;
+    left: 0;
+    height: 90vh;
+    width: 100vw;
+}
+
+#img2:target > .fondBas, #img3:target > .fondBas, #img4:target > .fondBas{
+    animation-name: animImageBas;
+    animation-duration: 1.5s;
+    animation-delay: 0.7s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}

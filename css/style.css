@@ -1,0 +1,143 @@
+@import "animations.css";
+@import "chapter.css";
+@import "bas.css";
+@import "caroussel.css";
+@import "responsive.css";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(../images/fond.png) repeat;
+    overflow-x: hidden;
+}
+
+#fond{
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#divFond{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+#shadowLeft{
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    height: 100vh;
+    width: 100vw; 
+    box-shadow: 6vw 0.1vw 4vw 1vw rgba(0,0,0,0.7);
+    z-index: 2;
+    animation-name: shadowLeft;
+    animation-delay: 1.15s;
+    animation-fill-mode: forwards;
+    animation-duration: 0.75s;
+    opacity: 0;
+}
+
+#shadowRight{
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: -6vw 0.1vw 4vw 1vw rgba(0,0,0,0.7);
+    z-index: 2;
+    animation-name: shadowRight;
+    animation-delay: 1.15s;
+    animation-fill-mode: forwards;
+    animation-duration: 0.75s;
+    opacity: 0;
+}
+
+#background1{
+    position: relative;
+    animation-name: imageMain;
+    animation-duration: 0.75s;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#titre{
+    position: absolute;
+    top: 37.5vh;
+    left: 4.3vw;
+    font-size: 8vh;
+    font-family: 'Goldman', cursive;
+    color: white;
+    border: none;
+    text-shadow: rgb(67, 32, 34) 1px 0 0, rgb(67, 32, 34) 0.540302px 0.841471px 0, rgb(67, 32, 34) -0.416147px 0.909297px 0, rgb(67, 32, 34) -0.989992px 0.14112px 0, rgb(67, 32, 34) -0.653644px -0.756802px 0, rgb(67, 32, 34) 0.283662px -0.958924px 0, rgb(67, 32, 34) 0.96017px -0,-6px 5px 0 #432022;
+    animation-name: animTitre;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.75s;
+    animation-delay: 1.7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: 3;
+}
+
+#sousTitre{
+    position: absolute;
+    top: 50.5vh;
+    left: 4.3vw;
+    font-size: 4vh;
+    font-weight: 500;
+    font-family: 'Goldman', cursive;
+    color: white;
+    border: none;
+    text-shadow: rgb(67, 32, 34) 1px 0 0, rgb(67, 32, 34) 0.540302px 0.841471px 0, rgb(67, 32, 34) -0.416147px 0.909297px 0, rgb(67, 32, 34) -0.989992px 0.14112px 0, rgb(67, 32, 34) -0.653644px -0.756802px 0, rgb(67, 32, 34) 0.283662px -0.958924px 0, rgb(67, 32, 34) 0.96017px -0,-3px 3px 0 #432022;
+    animation-name: animSousTitre;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+    z-index: 3;
+}
+
+#cadre{
+    position: absolute;
+    bottom: 18vh;
+    left: 4.3vw;
+    height: 21.5vh;
+    width: 40vw;
+    border-top: 1.3vh solid white;
+    background-color: #BC8861;
+    animation-name: animCadre;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.75s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+
+p{
+    position: relative;
+    padding: 4.5vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: lighter;
+    font-size: 2.5vh;
+    color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+}
